@@ -60,10 +60,10 @@ $db['local']['stricton'] = TRUE;
 // ...etc
 
 // Live
-$db['live']['hostname'] = 'localhost';
-$db['live']['username'] = 'root';
-$db['live']['password'] = 'root';
-$db['live']['database'] = 'pyrocms-demo';
+$db['live']['hostname'] = 'tunnel.pagodabox.com';
+$db['live']['username'] = 'nada';
+$db['live']['password'] = 'hHzIiBgO';
+$db['live']['database'] = 'pyrocms';
 $db['live']['dbdriver'] = 'mysql';
 $db['live']['dbprefix'] = '';
 $db['live']['stricton'] = TRUE;
