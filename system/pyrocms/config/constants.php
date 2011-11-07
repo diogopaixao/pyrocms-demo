@@ -43,7 +43,11 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 */
 
 // Local: localhost or local.example.com
-if ($_SERVER['SERVER_NAME'])
+if (isset($_SERVER['PLATFORM']) && $_SERVER['PLATFORM'] == 'PAGODABOX')
+{
+	define('ENV', 'live');
+}
+else if ($_SERVER['SERVER_NAME'])
 {
 	if (strpos($_SERVER['SERVER_NAME'], 'local.') !== FALSE OR $_SERVER['SERVER_NAME'] == 'localhost' OR strpos($_SERVER['SERVER_NAME'], '.local') !== FALSE)
 	{
@@ -65,7 +69,6 @@ if ($_SERVER['SERVER_NAME'])
 	// Live: example.com
 	else
 	{
-		define('ENV', 'live');
 	}
 }
 else
