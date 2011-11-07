@@ -69,7 +69,8 @@ else if ($_SERVER['SERVER_NAME'])
 	// Live: example.com
 	else
 	{
-	}
+    	define('ENV', 'live');
+}	}
 }
 else
 {
