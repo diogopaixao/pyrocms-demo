@@ -70,7 +70,7 @@ else if ($_SERVER['SERVER_NAME'])
 	else
 	{
     	define('ENV', 'live');
-}	}
+    }	
 }
 else
 {
