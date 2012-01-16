@@ -39,9 +39,6 @@
             - curl
         db1: #component type & number 
           name: articles #component settings
-    <div class="extra">
-      /Boxfile
-    </div>
   </div>
 	<p>Identifying shared_writable_dirs will allow your application to write cache, logs, images, uploads, etc. to those directories and then share them among application clones. The PHP extensions are those required to run PyroCMS</a>.</p>
 	<p>Save the Boxfile, add new files to your repo, commit your changes, and push them to your PagodaBox repo.</p>
@@ -62,10 +59,6 @@
             $db['live']['database'] = $_SERVER['DB1_NAME'];
             $db['live']['port'] 	= $_SERVER['DB1_PORT'];
             ...
-
-      <div class="extra">
-          /system/pyrocms/config/database.php
-      </div>
   </div>
 	<h4 id="get-your-local-database-to-pagoda">Import your local database into Pagoda</h4>
 	<p>Export your local database with your favorite local database administration tool(e.g. phpMyAdmin, Sequel Pro, etc.).</p>
