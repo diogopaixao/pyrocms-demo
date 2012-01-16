@@ -18,7 +18,6 @@
 	<span class="guides-sprite w-cap">&nbsp;</span><span class="horizontal-guides-sprite white">Important: No Auto-Installers on Pagoda Box</span><span class="guides-sprite w-end-cap">&nbsp;</span></h3>
 	<div class="block yellow">
 		<p>You are not able to run auto-installers on Pagoda Box. If you use PyroCMS&#39;s auto-installer, run it locally to generate all the necessary configuration files and database tables, then deploy your app to Pagoda Box.</p>
-	</div>
 	<h4 id="-create-a-github-repo-for-your-app">Create a Git Repo for Your PyroCMS App</h4>
 	<p><a href="/customer/portal/articles/202225-setting-up-git">Set up Git</a>, if you haven't already. Then initialize your app as a git repo.</p>
   <h4 id="boxfile-example">Boxfile Example</h4>
