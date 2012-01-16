@@ -34,7 +34,7 @@
 // Local
 $db['local']['hostname'] = 'localhost';
 $db['local']['username'] = 'root';
-$db['local']['password'] = 'root';
+$db['local']['password'] = '';
 $db['local']['database'] = 'pyrocms-demo';
 $db['local']['dbdriver'] = 'mysql';
 $db['local']['dbprefix'] = '';
@@ -62,7 +62,7 @@ $db['local']['stricton'] = TRUE;
 // Live
 $db['live']['hostname'] = 'tunnel.pagodabox.com';
 $db['live']['username'] = 'nada';
-$db['live']['password'] = 'hHzIiBgO';
+$db['live']['password'] = $_SERVER['PASSWORD'];
 $db['live']['database'] = 'pyrocms';
 $db['live']['dbdriver'] = 'mysql';
 $db['live']['dbprefix'] = '';
