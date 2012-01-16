@@ -26,8 +26,7 @@
   <h3 class="tag" id="pyrocms-example-box-file">
   <span class="guides-sprite cap">&nbsp;</span><span class="horizontal-guides-sprite title">YAML</span><span class="horizontal-guides-sprite green">PyroCMS Boxfile Example</span><span class="guides-sprite green-end-cap">&nbsp;</span></h3>
   <div class="block grey code" id="default-box-config-settings">
-    <script class='brush: yaml' type='syntaxhighlighter'>
-      <![CDATA[
+
         web1: #component type & number
           name: pyrocms #component settings
           shared_writable_dirs:
@@ -40,9 +39,9 @@
             - curl
         db1: #component type & number 
           name: articles #component settings
-        ]]>
-      </script> <div class="extra">
-      /Boxfile</div>
+    <div class="extra">
+      /Boxfile
+    </div>
   </div>
 	<p>Identifying shared_writable_dirs will allow your application to write cache, logs, images, uploads, etc. to those directories and then share them among application clones. The PHP extensions are those required to run PyroCMS</a>.</p>
 	<p>Save the Boxfile, add new files to your repo, commit your changes, and push them to your PagodaBox repo.</p>
@@ -56,16 +55,14 @@
   <p>Open the database configuration file located at /system/pyrocms/config/database.php and make the following changes.</p>
   <h3 id="database-settings" class="tag"><span class="guides-sprite cap">&nbsp;</span><span class="horizontal-guides-sprite title">PHP</span><span class="horizontal-guides-sprite green">Database Settings</span><span class="guides-sprite green-end-cap"></span></h3>
   <div class="block grey code">
-      <script class='brush: php' type='syntaxhighlighter'>
-          <![CDATA[
+
             $db['live']['hostname'] = $_SERVER['DB1_HOST'];
             $db['live']['username'] = $_SERVER['DB1_USER'];
             $db['live']['password'] = $_SERVER['DB1_PASS'];
             $db['live']['database'] = $_SERVER['DB1_NAME'];
             $db['live']['port'] 	= $_SERVER['DB1_PORT'];
             ...
-          ]]>
-      </script>
+
       <div class="extra">
           /system/pyrocms/config/database.php
       </div>
